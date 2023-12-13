@@ -1,0 +1,413 @@
+body {
+    margin: 0%;
+    font-family: 'Afacad', sans-serif;
+    background-color: black;
+}
+
+/* Navigation Bar */
+
+#logo {
+    padding: 0%;
+    float: left;
+    margin: 0%;
+    height: 35px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 4px;
+    left: 10px;
+}
+
+@keyframes logo {
+    0% {
+        top: -4px;
+    }
+
+    25% {
+        rotate: 10deg;
+    }
+
+    50% {
+        top: -9px;
+    }
+
+    75% {
+        rotate: -10deg;
+    }
+
+    100% {
+        top: -4px;
+    }
+}
+
+#logo:hover {
+    animation-name: logo;
+    animation-duration: 3s;
+}
+
+nav {
+    background-color: black;
+    text-align: right;
+    max-width: 100%;
+    padding: 1%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.sections {
+    color: #ffc0cb;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: larger;
+    border-bottom: 0;
+    transition: all 0.3s ease-in;
+}
+
+.sections:hover {
+    color: #099db8;
+    border-bottom: solid 2px #099db8;
+    transition: all 0.3s ease-in;
+}
+
+#menu{
+    color: #ffc0cb;
+    display: none;
+}
+#checkbox{
+    display: none;
+}
+/* Home/Header */
+
+.header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 100%;
+}
+
+#headerimg {
+    display: block;
+    width: 100%;
+}
+
+.headerimg {
+    flex: 1;
+}
+
+div.headercontent {
+    color: #e29980;
+    display: inline-block;
+    /* background-color: rgba(6, 117, 137, 0.299); */
+    padding: 5%;
+    text-align: center;
+    flex: 1;
+}
+
+.name {
+    transition: all 0.5s ease-in-out;
+}
+
+.name:hover {
+    transition: all 0.5s ease-in-out;
+    font-size: xx-large;
+    color: #099db8;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.425);
+}
+
+/* About Me */
+
+.aboutme {
+    display: flex;
+    width: 100%;
+    padding-top: 33px;
+}
+
+.aboutmeimg {
+    flex: 1;
+    padding: 3%;
+}
+
+#abtmeimg {
+    width: 100%;
+    display: block;
+    margin-bottom: 2%;
+}
+
+#abtmeimg2 {
+    width: 100%;
+    display: block;
+}
+
+.aboutmecontent {
+    flex: 2;
+    padding: 3%;
+    margin-right: 2%;
+    margin-left: 2%;
+    align-self: flex-start;
+    background-color: rgba(255, 192, 203, 0.95);
+}
+
+.aboutmecontent h1 {
+    font-size: xx-large;
+    text-align: center;
+    margin: 0%;
+}
+
+.info {
+    font-size: larger;
+}
+
+.info::first-letter {
+    font-size: xx-large;
+}
+
+.skilllist {
+    font-size: larger;
+}
+
+.skilllist p {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.skilllist ul {
+    list-style-image: url(star_FILL1_wght100_GRAD-25_opsz20.png);
+}
+
+.cv {
+    text-align: center;
+}
+
+.aboutmecontent a {
+    border: black solid;
+    padding: 1% 3%;
+    text-decoration: none;
+    background-color: black;
+    color: pink;
+    font-size: larger;
+    transition: all 0.2s ease-in;
+}
+
+.aboutmecontent a:hover {
+    transition: all 0.2s ease-in;
+    color: black;
+    background-color: #0cb0cd;
+}
+
+/* Projects */
+
+.projects {
+    padding-top: 33px;
+}
+
+.projects>h1 {
+    color: #ffc0cb;
+    font-size: xx-large;
+    text-align: center;
+    padding: 1%
+}
+
+.allworks {
+    display: flex;
+    align-content: stretch;
+}
+
+.works {
+    display: block;
+    flex: 1;
+    margin: 2%;
+    background-color: rgba(255, 192, 203, 0.95);
+}
+
+.works p {
+    padding: 3%;
+    font-size: large;
+}
+
+.works p::first-letter {
+    font-size: larger;
+}
+
+.work {
+    width: 100%;
+}
+
+/* Contact Me */
+
+.contactme {
+    padding-top: 35px;
+    background-color: rgba(255, 192, 203, 0.95);
+}
+
+.contactme h1 {
+    font-size: xx-large;
+    text-align: center;
+    padding: 2%;
+    padding-bottom: 0%;
+    margin: 0%;
+}
+
+.contacts {
+    display: flex;
+}
+
+.indirect {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    font-size: larger;
+    justify-content: center;
+    position: relative;
+}
+
+.direct {
+    flex: 1;
+    padding: 2%;
+}
+
+.form {
+    padding: 2%;
+    font-family: 'Afacad', sans-serif;
+    font-size: large;
+}
+
+.form input {
+    background-color: black;
+    border: solid 2px black;
+    border-radius: 5px;
+    color: pink;
+    font-family: 'Afacad', sans-serif;
+    font-size: large;
+}
+
+.form input::placeholder {
+    font-family: 'Afacad', sans-serif;
+    color: rgba(245, 245, 245, 0.75);
+}
+
+.form textarea {
+    background-color: black;
+    border: solid 2px black;
+    border-radius: 5px;
+    color: pink;
+    font-family: 'Afacad', sans-serif;
+    font-size: large;
+    width: 100%;
+}
+
+.form textarea::placeholder {
+    font-family: 'Afacad', sans-serif;
+    color: rgba(245, 245, 245, 0.75);
+}
+
+#sub {
+    font-size: larger;
+}
+
+.material-symbols-outlined {
+    position: relative;
+    top: 5px;
+}
+
+.mymail>a {
+    text-decoration: none;
+    color: black;
+}
+
+.mymail>a:hover {
+    color: #099db8;
+    text-decoration: underline #099db8 1px;
+}
+
+footer {
+    text-align: right;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+/* Responsive */
+
+@media only screen and (max-width:400px){
+    #logo{
+        height: 25px;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        top:0;
+        right: 0;
+        padding: 1%;
+        cursor: pointer;
+    }
+    #checkbox{display: inline;
+     visibility: hidden;}
+    .hammenu{display: flex;
+    flex-direction: column;
+position: absolute;
+top: 25px;
+right: -100%;
+background-color: black;
+padding: 5%;
+transition: all 0.3s ease-in;}
+#checkbox:checked ~ .hammenu{
+    right:0; 
+    transition: all 0.3s ease-in;
+}
+.headerimg{display: none;}
+
+}
+@media only screen and (max-width:500px) {
+    .aboutme {
+        flex-direction: column-reverse;
+    }
+
+    .aboutmeimg {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .abtmeimg {
+        padding: 1%;
+    }
+
+    .abtmeimg2 {
+        padding: 1%;
+    }
+
+    .allworks {
+        flex-direction: column;
+    }
+
+    .works {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .contacts{
+        flex-direction: column-reverse;
+    }
+    .form{
+        font-size: smaller;
+    }
+    .form input{
+        font-size: medium;
+    }
+    .form textarea{
+        font-size: medium;
+    }
+}
+    @media only screen and (max-width: 600px) {
+        body {
+            font-size: medium;
+        }
+
+        #logo {
+            height: 28px;
+        }
+
+        .works p {
+            font-size: medium;
+        }
+    }
